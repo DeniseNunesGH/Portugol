@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
+        //6 - Escreva um programa para ler 2 notas de um aluno, calcular e imprimir a média final. Considere que a nota de aprovação é 9,5. Logo após escrever a mensagem "Calcular a média de outro aluno Sim/Não?" e solicitar um resposta. Se a resposta for "S", o programa deve ser executado novamente, caso contrário deve ser encerrado exibindo a quantidade de alunos aprovados.
 
     real aprovacao = 9.5, nota1, nota2, soma = 0, media = 0, resultado
     //aqui está correto
@@ -19,6 +19,10 @@ programa {
     media = soma / 2
     escreva("Média: ", media)
 
+    resposta = 's'
+    //caracter trabalha com aspas simples
+    enquanto (resposta == "s" ) {
+      //pode-se utilizar o se e senao DENTRO da enquanto
     se (media >= aprovados)
     //se média é maior e/ou igual a aprovados
         aprovados = aprovados + 1
@@ -30,13 +34,11 @@ programa {
     
     escreva("\nCalcular a média de outro aluno? (S - Sim ou N - Não): ")
     leia(resposta)
-
-     enquanto (resposta == "s" ou resposta == "n") 
-    {
-    escreva("Quantidade de alunos aprovados: ", aprovados)
+    
     }
 
-    
 
+    escreva("Quantidade de alunos aprovados: ", aprovados)
+  }
   }
 }
